@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #EBEEED;
 }
 
 body {
@@ -68,4 +69,60 @@ a{
 .header-links .link-item:hover{
     text-decoration: underline;
     
+}
+
+.quote-footer{
+  background: red;
+  color: #EBEEED;
+  margin-top: auto;
+}
+
+.quote-footer .quotation{
+  font-style: italic;
+}
+
+.main-content{
+  background: green;
+  padding: 1.5rem 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.main-content .world-clock, .main-content .search-field{
+  width: 50%;
+  background-color: brown;
+  padding: 1rem;
+}
+
+.search-box form #search-box-field{
+  width: 100%;
+  font-size: 2rem;
+  padding: 0.3rem;
+  background-color: blue;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-bottom: none;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.search-box form #search-box-field:focus{
+  border-bottom: solid 2px #EBEEED;
+
+}
+
+.search-box form #search-box-field::before{
+  content:"";
+  width: 100%;
+  height: 10px;
+  background-color: yellow;
+  position: absolute;
+  bottom:0;
+
+}
+
+
+.search-box form #search-box-field::placeholder{
+  color: #ebeeed9f
 }
