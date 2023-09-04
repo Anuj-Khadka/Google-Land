@@ -136,7 +136,7 @@ a {
   width: 100%;
   display: grid;
   justify-content: center;
-  place-items: center;
+  place-items: start;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   background-color: grey;
@@ -206,8 +206,8 @@ a {
 }
 
 #usa-clock{
-  height:250px;
+  height:150px;
   width: 150px;
   background-image: url("./imgs/timer.png");
-
+  border-radius: 50%;
 }
