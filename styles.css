@@ -25,6 +25,7 @@ a {
   height: 100vh;
   width: 100%;
   background: #051320;
+  overflow: hidden;
 }
 
 .inner-container {
@@ -74,11 +75,19 @@ a {
   background: red;
   color: #ebeeed;
   margin-top: auto;
+  text-align: center;
 }
 
 .quote-footer .quotation {
   font-style: italic;
 }
+
+.quote{
+  background: brown;
+  display:inline-block;
+  padding: 1rem;
+}
+
 
 .main-content {
   background: green;
@@ -145,6 +154,7 @@ a {
 
 .clock-items{
   flex: 0 1 auto;
+  display: inline-flex
 }
 
 #nepal-clock {
@@ -152,7 +162,7 @@ a {
   width: 150px;
   padding: 2rem;
   background: red;
-  border-radius: 3rem 0;
+  border-radius: 3rem 0 0;
   background-image: 
   /* linear-gradient(45deg, rgba(41, 36, 36, 0.4)), */
     url("./imgs/nepal.png");
@@ -200,9 +210,13 @@ a {
 }
 
 #timer-clock{
-  height:250px;
+  height:100px;
   width: 150px;
   background-image: url("./imgs/timer.png");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  mix-blend-mode: multiply;
 }
 
 #usa-clock{
