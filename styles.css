@@ -43,7 +43,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: red; */
 }
 
 .main-content {
@@ -137,17 +136,15 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-direction: row; */
-  
+  width: 80%
 }
 
 .clocks-container{
-  width: 100%;
+  width: 70%;
   display: grid;
   justify-content: center;
   place-items: start;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
   background-color: grey;
   flex-wrap: wrap;
 }
@@ -187,10 +184,9 @@ a {
   height: 250px;
   width: 150px;
   padding: 2rem;
-  background: red;
+  /* background: red; */
   border-radius: 0 3rem 0 0;
   background-image: 
-  /* linear-gradient(45deg, rgba(41, 36, 36, 0.4)), */
     url("./imgs/qatar.png");
   background-position: center center;
   background-size: cover;
@@ -217,6 +213,7 @@ a {
   background-size: cover;
   position: relative;
   mix-blend-mode: multiply;
+  border-top: solid 10px #051320;
 }
 
 #usa-clock{
@@ -224,4 +221,10 @@ a {
   width: 150px;
   background-image: url("./imgs/timer.png");
   border-radius: 50%;
+  border-top:solid 12px #051320;
+  position: absolute;
+  bottom:-85px;
+  left:0;
+  justify-content: center;
+  align-items: center;
 }
