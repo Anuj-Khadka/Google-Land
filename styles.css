@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 *,
 *::before,
 *::after {
@@ -8,7 +10,7 @@
 }
 
 body {
-  background-color: red;
+  font-family: "Roboto", sans-serif;
 }
 
 ul,
@@ -60,7 +62,7 @@ a {
 }
 
 .header-links .link-item {
-  background-color: brown;
+  /* background-color: brown; */
   margin-right: 1.2rem;
   padding: 0.2rem 0.4rem;
   transition: all 0.1s ease-in-out;
@@ -71,7 +73,7 @@ a {
 }
 
 .quote-footer {
-  background: red;
+  /* background: red; */
   color: #ebeeed;
   margin-top: auto;
   text-align: center;
@@ -81,15 +83,15 @@ a {
   font-style: italic;
 }
 
-.quote{
-  background: brown;
-  display:inline-block;
+.quote {
+  /* background: brown; */
+  display: inline-block;
   padding: 1rem;
+  font-size: 1rem;
 }
 
-
 .main-content {
-  background: green;
+  /* background: green; */
   padding: 1.5rem 1rem;
   display: flex;
   gap: 1rem;
@@ -98,16 +100,22 @@ a {
 .main-content .world-clock,
 .main-content .search-field {
   width: 50%;
-  background-color: brown;
+  /* background-color: brown; */
   padding: 1rem;
+}
+
+.search-box form {
+  border-bottom: solid 2px #ebeeed;
 }
 
 .search-box form #search-box-field {
   width: 100%;
   font-size: 2rem;
   padding: 0.3rem;
-  background-color: blue;
+  /* background-color: blue; */
+  background: transparent;
   border: none;
+  /* border-bottom: solid 2px #ebeeed; */
   outline: none;
   text-align: center;
   border-bottom: none;
@@ -115,86 +123,80 @@ a {
   transition: all 0.5s ease-in-out;
 }
 
-.search-box form #search-box-field:focus {
+/* .search-box form #search-box-field:focus {
   border-bottom: solid 2px #ebeeed;
-}
+} */
 
 .search-box form #search-box-field::before {
   content: "";
   width: 100%;
   height: 10px;
-  background-color: yellow;
+  /* background-color: yellow; */
   position: absolute;
   bottom: 0;
 }
 
 .search-box form #search-box-field::placeholder {
-  color: #ebeeed9f;
+  color: #ebeeed43;
 }
 
-.world-clock{
+.world-clock {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%
+  width: 80%;
 }
 
-.clocks-container{
+.clocks-container {
   width: 70%;
   display: grid;
   justify-content: center;
   place-items: start;
   grid-template-columns: 1fr 1fr;
-  background-color: grey;
+  /* background-color: grey; */
   flex-wrap: wrap;
 }
 
-.clock-items{
+.clock-items {
   flex: 0 1 auto;
-  display: inline-flex
+  display: inline-flex;
 }
 
 #nepal-clock {
   height: 250px;
   width: 150px;
   padding: 2rem;
-  background: red;
-  border-radius: 3rem 0 0;
-  background-image: 
-  /* linear-gradient(45deg, rgba(41, 36, 36, 0.4)), */
-    url("./imgs/nepal.png");
-  background-position: center center;
-  background-size: cover;
-  position: relative;
+  border-radius: 3rem 0 0 0;
+  background: 
+  linear-gradient(45deg, rgba(41, 36, 36, 1), transparent),
+  url("./imgs/nepal.png") center center / cover no-repeat;
   font-size: 2rem;
 }
 
-#nepal-clock::before{
+/* #nepal-clock::before {
   content: "";
   background: rgba(0, 0, 0, 0.4);
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   height: 250px;
   width: 150px;
   border-radius: 3rem 0;
-}
+} */
 
-#qatar-clock{
+#qatar-clock {
   height: 250px;
   width: 150px;
   padding: 2rem;
   /* background: red; */
   border-radius: 0 3rem 0 0;
-  background-image: 
-    url("./imgs/qatar.png");
+  background-image: url("./imgs/qatar.png");
   background-position: center center;
   background-size: cover;
   position: relative;
-  mix-blend-mode: multiply;
 }
 
-#qatar-clock::before{
+/* #qatar-clock::before {
   content: "";
   background: #fff;
   height: 150px;
@@ -202,29 +204,29 @@ a {
   border-radius: 50%;
   position: absolute;
   bottom: -90px;
-  left:0
-}
+  left: 0;
+} */
 
-#timer-clock{
-  height:100px;
+#timer-clock {
+  height: 100px;
   width: 150px;
-  background-image: url("./imgs/timer.png");
+  background: url("./imgs/timer.png");
   background-position: center center;
   background-size: cover;
   position: relative;
-  mix-blend-mode: multiply;
   border-top: solid 10px #051320;
+  border-radius: 0 0 3rem 0;
 }
 
-#usa-clock{
-  height:150px;
+#usa-clock {
+  height: 150px;
   width: 150px;
   background-image: url("./imgs/timer.png");
   border-radius: 50%;
-  border-top:solid 12px #051320;
+  box-shadow: 0px -15px 0px #051320;
   position: absolute;
-  bottom:-85px;
-  left:0;
+  bottom: -100px;
+  left: 0;
   justify-content: center;
   align-items: center;
 }
