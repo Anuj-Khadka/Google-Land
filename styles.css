@@ -167,9 +167,8 @@ a {
   width: 150px;
   padding: 2rem;
   border-radius: 3rem 0 0 0;
-  background: 
-  linear-gradient(45deg, rgba(41, 36, 36, 1), rgba(41, 36, 36, 0.3)),
-  url("./imgs/nepal.png") center center / cover no-repeat;
+  background: linear-gradient(45deg, rgba(41, 36, 36, 1), rgba(41, 36, 36, 0.3)),
+    url("./imgs/nepal.png") center center / cover no-repeat;
   font-size: 2rem;
 
   display: flex;
@@ -184,8 +183,8 @@ a {
   padding: 2rem;
   /* background: red; */
   border-radius: 0 3rem 0 0;
-  background:  linear-gradient(45deg, rgba(41, 36, 36, 1), rgba(41, 36, 36, 0.3)),
-  url("./imgs/qatar.png");
+  background: linear-gradient(45deg, rgba(41, 36, 36, 1), rgba(41, 36, 36, 0.3)),
+    url("./imgs/qatar.png");
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -205,7 +204,8 @@ a {
 #timer-clock {
   height: 100px;
   width: 150px;
-  background:  linear-gradient(45deg, rgba(41, 36, 36, 1), rgba(41, 36, 36, 0.3)),url("./imgs/timer.png");
+  background: linear-gradient(45deg, rgba(41, 36, 36, 1), rgba(41, 36, 36, 0.3)),
+    url("./imgs/timer.png");
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -216,7 +216,12 @@ a {
 #usa-clock {
   height: 150px;
   width: 150px;
-  background-image:  linear-gradient(45deg, rgba(41, 36, 36, 1), rgba(41, 36, 36, 0.3)),url("./imgs/usa.png");
+  background-image: linear-gradient(
+      45deg,
+      rgba(41, 36, 36, 1),
+      rgba(41, 36, 36, 0.3)
+    ),
+    url("./imgs/usa.png");
   background-position: center center;
   background-size: cover;
   border-radius: 50%;
@@ -228,11 +233,16 @@ a {
   align-items: center;
 }
 
-#nepal-date-year{
+#nepal-date-year,
+#qatar-date-year {
   font-size: 0.9rem;
+  border-top: solid 1px #ebeeed;
+  margin-top: 5px;
+  padding-top: 5px;
 }
 
-.nepal-time{
+.nepal-time,
+.qatar-time {
   font-size: 4rem;
   line-height: 0.9;
 }
