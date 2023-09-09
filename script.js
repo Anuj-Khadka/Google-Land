@@ -95,6 +95,70 @@ const getQatarTime = () => {
   };
 
 
+// function for date format of Qatar
+const getUsaTime = () => {
+    // additional object for detailed date value extraction based on time zones
+    const usaOptions = {
+      // weekday: "long",
+      year: "numeric",
+      day: "numeric",
+      timeZone: "America/New_York",
+      month: "short",
+    };
+  
+    // Extract hour and minute for Nepal
+    const usaHourMinute = new Intl.DateTimeFormat("en-US", {
+      timeZone: "America/New_York",
+      hour: "2-digit",
+      minute: "2-digit",
+    });
+  
+    //   elements to insert time values in HTML
+    let usaDateYear = document.getElementById("usa-date-year");
+    let usaHourTime = document.getElementById("usa-hour-time");
+    let usaMinuteTime = document.getElementById("usa-minute-time");
+  
+    //   update every second with the time, date
+    let usaFullDateInterval = setInterval(() => {
+      // Get the current month, date and year in usa
+      let usaFullDate = date.toLocaleDateString("en-US", usaOptions);
+  
+      // Get the current hour and minute in usa
+      const usaTime = new Date().toLocaleString("en-US", usaHourMinute);
+  
+      // console.log("#######", usaHour, usaMinute, "############");
+  
+      // get hour and minute for usa
+      const usaParts = usaHourMinute.formatToParts();
+      const usaHour = usaParts.find((part) => part.type === "hour").value;
+      const usaMinute = usaParts.find((part) => part.type === "minute").value;
+  
+    //   console.log(usaFullDate);
+      // display value on the website
+      usaDateYear.innerText = usaFullDate;
+      usaHourTime.innerText = usaHour;
+      usaMinuteTime.innerText = usaMinute;
+    }, 1000);
+  };
+
+
 
 getNepalTime();
 getQatarTime()
+getUsaTime()
+
+
+
+
+// get new quotations everyday 
+fetch("https://type.fit/api/quotes")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    console.log(data);
+    data.forEach(function (element) {
+        console.log(element.text)
+        console.log(element.author.split(",")[0])
+    })
+  });
