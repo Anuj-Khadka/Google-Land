@@ -148,11 +148,12 @@ a {
 }
 
 .clocks-container {
-  width: 70%;
+  /* width: 70%; */
   display: grid;
   justify-content: center;
   place-items: start;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
   /* background-color: grey; */
   flex-wrap: wrap;
 }
@@ -209,7 +210,7 @@ a {
   background-position: center center;
   background-size: cover;
   position: relative;
-  border-top: solid 10px #051320;
+  /* border-top: solid 10px #051320; */
   border-radius: 0 0 3rem 0;
 }
 
@@ -229,12 +230,15 @@ a {
   position: absolute;
   bottom: -100px;
   left: 0;
+  display: flex;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
 }
 
 #nepal-date-year,
-#qatar-date-year {
+#qatar-date-year,
+#usa-date-year {
   font-size: 0.9rem;
   border-top: solid 1px #ebeeed;
   margin-top: 5px;
@@ -242,7 +246,21 @@ a {
 }
 
 .nepal-time,
-.qatar-time {
+.qatar-time,
+.usa-time {
   font-size: 4rem;
   line-height: 0.9;
+}
+
+#usa-date-year {
+  border-left: solid 3px #ebeeed;
+  border-top: none;
+  margin-left: 8px;
+  padding-left: 8px;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+}
+
+.usa-time {
+  font-size: 3rem;
 }
