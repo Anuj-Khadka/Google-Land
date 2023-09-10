@@ -142,11 +142,10 @@ const getUsaTime = () => {
   };
 
 
-
+// calling all the clock time's functions
 getNepalTime();
 getQatarTime()
 getUsaTime()
-
 
 
 
