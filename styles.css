@@ -123,10 +123,6 @@ a {
   transition: all 0.5s ease-in-out;
 }
 
-/* .search-box form #search-box-field:focus {
-  border-bottom: solid 2px #ebeeed;
-} */
-
 .search-box form #search-box-field::before {
   content: "";
   width: 100%;
@@ -160,7 +156,6 @@ a {
 
 .clock-items {
   flex: 0 1 auto;
-  /* display: inline-flex; */
 }
 
 #nepal-clock {
@@ -191,17 +186,6 @@ a {
   position: relative;
 }
 
-/* #qatar-clock::before {
-  content: "";
-  background: #fff;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  position: absolute;
-  bottom: -90px;
-  left: 0;
-} */
-
 #timer-clock {
   height: 100px;
   width: 150px;
@@ -231,7 +215,6 @@ a {
   bottom: -100px;
   left: 0;
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
 }
