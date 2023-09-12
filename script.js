@@ -161,3 +161,21 @@ fetch("https://type.fit/api/quotes")
         console.log(element.author.split(",")[0])
     })
   });
+
+// timer btn functionality 
+
+
+function timerToggle(){
+    let timerBtn = document.getElementById("timer-btn")
+    let runTimer = document.getElementById("run-timer")
+    timerBtn.addEventListener("click", ()=>{
+        timerBtn.style.display = "none";
+        runTimer.style.display = "inline-flex"
+    })
+    runTimer.addEventListener("click", ()=>{
+        runTimer.style.display = "none";
+        timerBtn.style.display = "inline-flex"
+    })
+}
+
+timerToggle()
