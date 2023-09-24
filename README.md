@@ -13,3 +13,6 @@ This is a custom lading page for Google Chrome.
 
 ## General Info
 Google Land is a custom home page for google chrome browser. Specially, cutomized for those people who live either in USA and want the time of Nepal or Qatar or vice versa. We can also make a web search through this home page alongside some todo adding for productivity.
+
+## Technologies
+The custom Google home page is designed to provide users with a simplified and personalized experience. Utilizing the foundational web technologies: HTML, CSS, and JavaScript, this web page offers an intuitive interface and dynamic interactivity.
