@@ -25,4 +25,4 @@ The custom Google home page is designed to provide users with a simplified and p
 ```bash
 git clone https:/github.com/Anuj-Khadka/Google-Land.git
 ```
-- Find 'index.html' file inside the Google-Land folder, and open it in your web browser.
+- Find `index.html` file inside the Google-Land folder, and open it in your web browser.
