@@ -33,3 +33,5 @@ git clone https:/github.com/Anuj-Khadka/Google-Land.git
 - Pomodoro Timer
 - Todo list maker.
 - Easily accessible links.
+
+## Other Details
