@@ -6,7 +6,6 @@ This is a custom lading page for Google Chrome.
 - [Technologies](#technologies)
 - [Glmpse](#glimpse)
 - [How to Run](#how-to-run)
-    - [Live Demo](#live-demo)
     - [Run Locally](#run-locally)
 - [Features](#features)
 
