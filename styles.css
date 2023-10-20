@@ -77,6 +77,9 @@ a {
   color: #ebeeed;
   margin-top: auto;
   text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
 .quote-footer .quotation {
@@ -86,8 +89,9 @@ a {
 .quote {
   /* background: brown; */
   display: inline-block;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   font-size: 1rem;
+  font-weight: 300;
 }
 
 .main-content {
