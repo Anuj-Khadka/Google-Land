@@ -7,7 +7,7 @@ This is a custom lading page for Google Chrome.
 - [Glmpse](#glimpse)
 - [How to Run](#how-to-run)
     - [Run Locally](#run-locally)
-    - [Demo]()
+    - [Live Demo]()
 - [Features](#features)
 
 ## General Info
@@ -26,7 +26,7 @@ git clone https:/github.com/Anuj-Khadka/Google-Land.git
 ```
 - Find `index.html` file inside the Google-Land folder, and open it in your web browser.
 
-### Demo
+### Live Demo
 
 ## Features
 - Clock time of three different countries.
