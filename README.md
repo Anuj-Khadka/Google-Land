@@ -27,7 +27,7 @@ git clone https:/github.com/Anuj-Khadka/Google-Land.git
 - Find `index.html` file inside the Google-Land folder, and open it in your web browser.
 
 ### Live Demo
-< a href="https://www.googhome.netlify.app">Google Home</a>
+<a href="https://www.googhome.netlify.app">Google Home</a>
 
 ## Features
 - Clock time of three different countries.
